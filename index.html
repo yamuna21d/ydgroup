@@ -1,0 +1,575 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			body{
+				
+				
+				background:white url('') no-repeat top left fixed;
+				margin:0;
+				
+			}
+			#mainarea{
+				width:1200px;
+				height:1500px;
+				background:white;
+				margin:0 auto;
+				}
+			#toparea{
+				width:1200px;
+				height:150px;
+				background:white;
+				}
+			#logoarea{
+				width:150px;
+				height:150px;
+				background:white;
+				float:left;
+				
+				
+				}
+			
+			
+			#titlearea{
+				width:1050px;
+				height:150px;
+				background:white;
+				float:left;
+				}
+			
+			#titlearea ul{
+				list-style:none;
+				margin:0;
+				padding:10px;
+			}
+			#titlearea ul li{
+				float:left;
+			}
+			#titlearea ul li a:link, #titlearea ul li a:visited{
+					color:blue;
+					text-decoration:none;
+					background:white;
+					display:block;
+					padding:10px 25px;
+				
+			}
+			#titlearea ul li a:hover{
+				color:black;
+			
+			}
+			
+			#titlearea ul li:last-child a:link, #titlearea ul li:last-child a:visited{
+				border:none;
+			}
+			#titlearea ul li ul{
+				display:none;
+				background:blue;
+			}
+		
+			#titlearea ul li:hover ul{
+				display:block;
+				z-index:1000;
+				position:absolute;
+			}
+			#titlearea ul li:hover ul li{
+				float:none;
+			
+			}
+			#titlearea ul li:hover ul li a:link,
+			#titlearea ul li:hover ul li a:visited{
+				border:none;
+				border-bottom:solid 1px gray;
+			}
+			
+			
+			#menuarea{
+				width:1200px;
+				height:40px;
+				background:white;
+				float:left;
+				font-weight:900px;
+				}
+			#slidearea{
+				width:1200px;
+				height:350px;
+				background:white;
+				float:left;
+				position:relative;
+				}
+			.jsr{
+				text-align:center;
+				position:absolute;
+				bottom:20%;
+				width:100%;
+				font:bold 55px arial;
+				text-shadow:5px 5px 5px black;
+				color:white;
+			}
+			.l{
+				text-align:left;
+				position:absolute;
+				top:30px;
+				left:0;
+				font:bold 25px arial;
+				text-shadow:5px 5px 5px black;
+				color:black;
+			}
+			#slidearea img{
+				width:100%;
+				height:100%;
+				}
+			#boxarea{
+				width:1200px;
+				height:300px;
+				background:black;
+				float:left;
+				}
+			#b1{
+				width:400px;
+				height:300px;
+				background:#2670D6;
+				float:left;
+				line-height:40px;
+				text-align:center;
+				font-weight:900px;
+				word-spacing:5px;
+				font-size:10px;
+				font color:white;
+				}
+			#b2{
+				width:400px;
+				height:300px;
+				background:#6C852F;
+				float:left;
+				line-height:40px;
+				text-align:center;
+				font-weight:900px;
+				word-spacing:5px;
+				font-size:15px;
+				font color:white;
+				}
+			#b3{
+				width:400px;
+				height:300px;
+				background:#E66F1A;
+				float:left;
+				line-height:40px;
+				text-align:center;
+				font-weight:900px;
+				word-spacing:5px;
+				font-size:15px;
+				font color:white;
+				}
+			#darea{
+				width:1200px;
+				height:630px;
+				background:white;
+				float:left;
+				}
+			.d1{
+				width:300px;
+				height:200px;
+				
+				float:left;
+				margin:50px;
+				}
+		
+			.d1 img{
+				width:100%;
+				height:100%;
+				
+			}
+			.d1 img{
+				border-radius:100px;
+				
+			}
+			.dg1{
+				
+				line-height:30px;
+				text-align:center;
+				font-weight:900;
+				word-spacing:5px;
+				
+				
+				}
+			.dg2{
+				
+				line-height:30px;
+				text-align:center;
+				font-weight:900;
+				word-spacing:5px;
+				}
+			.dg3{
+				
+				line-height:30px;
+				text-align:center;
+				font-weight:900;
+				word-spacing:5px;
+				}
+			#yarea{
+				width:1200px;
+				height:200px;
+				background:#0D7AB2;
+				float:left;
+				}
+			#y1{
+				width:600px;
+				height:300px;
+				
+				float:left;
+				
+				line-height:40px;
+				text-align:left;
+				font-weight:900px;
+				word-spacing:px;
+				font-size:20px;
+				
+				}
+			#y2{
+				width:600px;
+				height:300px;
+				
+				float:left;
+				line-height:30px;
+				text-align:left;
+				font-weight:900px;
+				word-spacing:px;
+				font-size:20px;
+	
+				}
+			#warea{
+				width:1200px;
+				height:20px;
+				background:white;
+				float:left;
+				}
+			#footerarea{
+				width:1200px;
+				height:410px;
+				background:#083D57;
+				float:left;
+				}
+			#f1{
+				width:300px;
+				height:410px;
+				
+				float:left;
+				}
+			#f1 ul{
+				list-style-type:none;
+				list-style-image:url('arr.png');
+				list-style-position:inside;
+			}
+			#f2{
+				width:300px;
+				height:410px;
+				
+				float:left;
+			}
+			#f2 ul{
+				list-style-type:none;
+				list-style-image:url('arr.png');
+				list-style-position:inside;
+			}
+			#f3{
+				width:300px;
+				height:410px;
+				
+				float:left;
+			}
+			#f3 ul{
+				list-style-type:none;
+				list-style-image:url('arr.png');
+				list-style-position:inside;
+			}
+			#f4{
+				width:300px;
+				height:410px;
+				
+				float:left;
+			}
+			#f4 ul{
+				list-style-type:none;
+				list-style-image:url('arr.png');
+				list-style-position:inside;
+			}
+			#karea{
+				width:1200px;
+				height:200px;
+				background:#083D57;
+				float:left;
+				text-align:center;
+				font-weight:900px;
+				line-height:40px;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="toparea">
+			
+				<div id="logoarea">
+					<img src="bg.jpg"/>
+					<p>TATA &nbsp; &nbsp; MAIN HOSPITAL</p>
+				</div>
+				<div id="titlearea">
+					<ul>
+						<li><a href="#">CORPORATE</a>
+							<ul>
+								<li><a href="#">Overview</a></li>
+								<li><a href="#">GM's Message</a></li>
+								<li><a href="#">Milestones</a></li>
+								<li><a href="#">Locations</a></li>
+								<li><a href="#">Social Initiatives</a></li>
+								<li><a href="#">TQM at TMH</a></li>
+							</ul>
+
+						</li>
+						<li><a href="#">SERVICE</a>
+							<ul>
+								<li><a href="#">Overview</a></li>
+								<li><a href="#">OPD Services</a></li>
+								<li><a href="#">Indoor Services</a></li>
+								<li><a href="#">Emergency & Casualty Services</a></li>
+								<li><a href="#">Diagnostic Services</a></li>
+								<li><a href="#">Critical Care Services</a></li>
+								<li><a href="#">Ambulance & Hearse Services</a></li>
+								<li><a href="#">TMH Clinics</a></li>
+								<li><a href="#">TMH Prime</a></li>
+							</ul>
+						</li>
+						<li><a href="#">DEPARTMENT</a>
+							<ul>
+								<li><a href="#">Medical Department</a></li>
+							</ul>
+						</li>
+						<li><a href="#">PATIENTS</a>
+							<ul>
+								<li><a href="#">Admission & Discharge</a></li>
+								<li><a href="#">Hospital Directory</a></li>
+								<li><a href="#">Day Care Procedures</a></li>
+								<li><a href="#">Health Check Up Plan</a></li>
+								<li><a href="#">Customer Care</a></li>
+								<li><a href="#">Visitors'Information</a></li>
+								<li><a href="#">Patients Testimonials</a></li>
+								<li><a href="#">Do's and Don'ts</a></li>
+								<li><a href="#">Book an Appointment</a></li>
+							</ul>
+						</li>
+						<li><a href="#">ACADEMICS</a>
+							<ul>
+								<li><a href="#">Overview</a></li>
+								<li><a href="#">DNB Courses</a></li>
+								<li><a href="#">College of Nursing</a></li>
+								<li><a href="#">Research</a></li>
+								<li><a href="#">Publication</a></li>
+								<li><a href="#">Clinical Society</a></li>
+								<li><a href="#">CME</a></li>
+								<li><a href="#">Nodal Center For Aids</a></li>
+								
+							</ul>
+						</li>
+						<li><a href="#">MEDIA</a>
+							<ul>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Event</a></li>
+								<li><a href="#">Gallery</a></li>
+							</ul>
+						</li>
+						<li><a href="tatasteel.com">CAREERS</a></li>
+						<li><a href="#">CONTACT</a>
+							<ul>
+								<li><a href="#">Contact Details</a></li>
+								<li><a href="#">Feedback</a></li>
+								
+							</ul>
+						</li>
+					</ul>
+					<p>
+					   <a href="http:google.com"><font color="black"><img src="h.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site 						Search----																</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img 						src="h2.png" />
+					</p>
+					<hr width="70%" size="" color="#868686" align="left"/>
+				</div>
+			</div>
+			
+			<div id="menuarea">
+				<tr>
+					<td width="1188px" height="30px"><marquee direction="left" scrollamount="5" bgcolor="white" onmouseover="this.stop()" onmouseout="this.start()"><font color="#3A7CDB" >**List of selected_Admission-2022_CONTMH-Know more **Personal Interview  NOTICE 2022-Know more**Personal-Basic B.Sc Nursing for 2022-2023 academic year -Know more </marquee></td>
+				</tr>
+			</div>
+			<div id="slidearea">
+				<img src="bg2.jpg" />
+				<div class="jsr">
+					OFFERING HEALTH CARE SERVICES
+				</div>
+				<div class="l">
+					TMH is 112 years 'YOUNG'
+				</div>
+			</div>
+			
+			<div id="boxarea">
+				<div id="b1">
+					<font color="white"><h1>FIND A DOCTOR<h1><img src="s1.png" /><br/>
+					<p>The doctors at Tata Main Hospital<br/> are here to cater to all your<br/> needs based on 						their<br/> specialties.</p></font>
+				</div>
+				<div id="b2">
+					<font color="white"><h1>BOOK AN APPOINTMENT</h1><img src="s2.png" /><br/>
+					<p>Your appointments with the doctors<br/> at Tata Main Hospital are<br/> scheduled quickly 					and<br/> efficiently.</p></font>
+				</div>
+				<div id="b3">
+					<font color="white"><h1>FAQ'S</h1><img src="s3.png" /><br/>
+					<p>We at Tata Main Hospital
+					are here to address<br/> all your concerns regarding the<br> care of your loved<br/> 							ones.</p></font>
+				</div>
+			</div>
+			<div id="darea">
+				<div class="d1 dg1">
+					<img src="m1.jpg" />
+					HEALTH CHECK UP PLANS<br/>
+					<hr width="70%" size="1px" color="blue" align="center"/>
+					<p>Select the TMH preventive check-up plan that suits your requirement from our wide range of 					packages</p>
+					<hr width="70%" size="1px" color="blue" align="center"/>
+					<img src="lo1.jpg" />
+				</div>
+				<div class="d1 dg2">
+					<img src="m2.jpg" />
+					TMH CLINIC<br/>
+					<hr width="70%" size="1px" color="blue" align="center"/>
+					<p>TMH Clinics are situated strategically all over the town and provide medical facilities to 					all.</p>
+					<hr width="70%" size="1px" color="blue" align="center"/>
+					<img src="lo2.jpg" />
+
+				</div>
+				<div class="d1 dg3">
+					<img src="m3.jpg" />
+					TMH PRIME<br/>
+					<hr width="70%" size="1px" color="blue" align="center"/>
+					<p>Tata Main Hospital provides quick and efficient care through our new TMH Prime 							offering.</p>
+					<hr width="70%" size="1px" color="blue" align="center"/>
+					<img src="lo3.jpg" />
+				</div>
+			</div>
+			<div id="yarea">
+				<div id="y1">
+				<font color="white">LATEST @TMH<br>
+				<hr width="70%" size="1px" color="white" align="left"/>
+				1st to 3rd Feb 2019 TMH to participate in AISMOC (All India Steel Medical Officers Conference) at 					Burnpur(W,B)<br/></font>
+				 <a href="http:google.com"><font color="white">View More</font></a>&nbsp;&nbsp;&rarr;
+				</div>
+				<div id="y2">
+				<font color="white">PATIENTS TESTIMONIALS<br/>
+				<hr width="70%" size="1px" color="white" align="left"/>
+				"The services provided by the whole nursing staff and doctors were very professional and friendly. I 					appreciate the effort made by all the medical staff during the course of the treatment of my 						children."<br/>
+				- Priyanka Jha</font>
+				</div>
+			</div>
+			<div id="warea"></div>
+			<div id="footerarea">
+				<div id="f1">
+					<ul>
+						<li><font color="white"><b>Corporate</b></font></li>
+							<p>
+								Overview<br/>
+								GM's Message<br/>
+								Milestones<br/>
+								Locations<br/>
+								Social Initiatives<br/>
+								TQM at TMH<br/>
+							</p>
+						<li><font color="white"><b>Academics</b></font></li>
+							<P>
+								Overview<br/>
+								DNB Courses<br/>
+								College of Nursing<br/>
+								Research<br/>
+								Publications<br/>
+								Clinical Society<br/>
+								CME<br/>
+								Nodal Centre For Aids<br/>
+							</p>	
+					</ul>
+				</div>
+				<div id="f2">
+					<ul>
+						<li><font color="white"><b>Services</b></font></li>
+							<p>
+								Overview<br/>
+								OPD Services<br/>
+								Indoor Services<br/>
+								Emergency & Casualty Services<br/>
+								Diagnostic Services<br/>
+								Critical Care Services<br/>
+								Ambulance & Hearse Services<br/>
+								TMH Clinics<br/>
+								TMH Prime<br/>
+							</p>
+						<li><font color="white"><b>Media</b></font></li>
+							<p>
+								News<br/>
+								Events<br/>
+								Gallery<br/>
+							</p>
+						<li><font color="white"><b>Contact</b></font></li>
+							<p>
+								Contact Details<br/>
+								Feedback<br/>
+							</p>
+					</ul>
+				</div>
+				<div id="f3">
+					<ul>
+						<li><font color="white"><b>Departments</b></font></li>
+							<p>
+								-Medical Departments<br/>
+								- Anaesthesiology<br/>
+								- Burns & Plastic Surgery<br/>
+								- Cardiology<br/>
+								- Critical Care Medicine<br/>
+								- Dentistry<br/>
+								- Dermatology<br/>
+								- Emergency & Casualty<br/>
+								- Gastroenterology<br/>
+								- Joint Replacement and Orthopaedics<br/>
+								- Medical Oncology<br/>
+								- Medicine<br/>
+								- Nephrology<br/>
+								- Neurology<br/>
+								- Neurosurgery<br/>
+								- Nuclear Medicine<br/>
+								- Obstetrics and Gynaecology<br/>
+								- Ophthalmology<br/>
+								- Otorhinolaryngology (ENT)<br/>
+								
+							</p>
+					</ul>
+				</div>
+				<div id="f4">
+					<ul>
+						<p>
+							- Paediatrics<br/>
+							- Pathology<br/>
+							- Psychiatry<br/>
+						</p>
+						<li><font color="white"><b>Patients</b></font></li>
+							<p>
+								Admission & Discharge Process<br/>
+								Hospital Directory<br/>
+								Day Care Procedures<br/>
+								Health Check-up Plans<br/>
+								Visitors' Information<br/>
+								Patient Testimonials<br/>
+								Do's and Don'ts<br/>
+							</p>
+					</ul>
+				</div>
+			</div>
+			<div id="karea">
+				<font color="white"><p>© 2022 Tata Main Hospital.<br/>
+				Privacy Policy - Disclaimer<br/>
+				Website Maintained By: YAMUNA MAHALI</p><img src="all.png" />
+			</div>
+		</div>
+	
+	
+	</body>
+</html>
